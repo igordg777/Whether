@@ -1,12 +1,15 @@
 <div id="info"></div>
 
-<!-- <div class="container row" style="position: fixed; bottom: 0; right: 0; width: 200px; background-color: white;"> -->
-<div align="center">
-<button style="width: 250px" class="btn btn-primary" id="chooseCity">Выбрать <br> город</button>
-<button style="width: 250px" class="btn btn-primary" id="myCities">Избранные  <br> города</button>
+<div id="actions">
+    <button class="btn btn-primary buttions" id="chooseCity">Выбрать город</button>
+    <button class="btn btn-primary buttions" id="myCities">Избранные города</button>
+    <form>
+        <input class="btn btn-primary buttions" type="button" value="Погодные карты"
+               onClick='location.href="https://yandex.ru/pogoda/maps/temperature?le_WindParticles=1&lat=55.685000878114046&lon=37.58679843359376"'>
+    </form>
 </div>
 <div align="center">
-    <div  class=" jumbotron col-sm-4 pull-center" id="choose" style="display: none">
+    <div class=" jumbotron col-sm-4 pull-center" id="choose" style="display: none">
         <form id="formLogin" action="/filmServer/login" method="post">
             <div>
                 <p>Выберите название города из списка или напишите в поле ввода</p>
@@ -28,7 +31,8 @@
                 <div>
                     <input type="text" id="write" placeholder="Название города">
                 </div>
-                <input style="width: 250px"  class="btn btn-primary" data-time="day" type="submit" value="Прогноз на сегодня" />
+                <input style="width: 250px" class="btn btn-primary" data-time="day" type="submit"
+                       value="Прогноз на сегодня"/>
             </div>
         </form>
     </div>
