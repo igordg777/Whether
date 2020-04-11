@@ -97,8 +97,8 @@ document.getElementById("myCities").addEventListener("click", async () => {
                         if (data.cod === 200) {
                             temp.innerHTML += `${name[i]}: ` + Math.round(data.main.temp - 273) + "&deg" + '<br>';
                             wind.innerHTML += `${name[i]}: ${data.wind.speed} мет. в сек.` + '<br>';
-                            cloud.innerHTML += `${data.clouds.all} %` + '<br>';
-                            pressure.innerHTML += `${name[i]}: ${data.main.pressure} <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BB%D0%BB%D0%B8%D0%BC%D0%B5%D1%82%D1%80_%D0%B2%D0%BE%D0%B4%D1%8F%D0%BD%D0%BE%D0%B3%D0%BE_%D1%81%D1%82%D0%BE%D0%BB%D0%B1%D0%B0">мм вод. столба</a>` + '<br>';
+                            cloud.innerHTML += `${name[i]}: ${data.clouds.all} %` + '<br>';
+                            pressure.innerHTML += `${name[i]}: ${data.main.pressure} <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BB%D0%BB%D0%B8%D0%BC%D0%B5%D1%82%D1%80_%D0%B2%D0%BE%D0%B4%D1%8F%D0%BD%D0%BE%D0%B3%D0%BE_%D1%81%D1%82%D0%BE%D0%BB%D0%B1%D0%B0">мм.</a>` + '<br>';
                         } else if (data.message === "city not found") {
                             title.innerHTML = 'Произошел сбой на сервере погоды "Openweathermap"'
                         }
