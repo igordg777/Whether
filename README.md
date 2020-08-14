@@ -20,4 +20,8 @@
 
 ### `npm start`
 
+Выполнен деплой на heroku? просмотр возможен по ссылке 
+
+### `https://weather-good-always.herokuapp.com/`
+
 
